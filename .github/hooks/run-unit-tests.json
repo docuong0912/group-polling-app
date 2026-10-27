@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/run-unit-tests.cjs",
+        "timeoutSec": 180
+      }
+    ]
+  }
+}
