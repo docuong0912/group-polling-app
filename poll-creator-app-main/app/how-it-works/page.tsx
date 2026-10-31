@@ -5,7 +5,7 @@ import { ArrowDownRight, CircleHelp } from "lucide-react";
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "Learn how to run a planning poker session with Tiebreak: prepare a story, estimate privately on one device, and reveal together.",
+    "Learn how to run a planning poker session with RoundTable: prepare a story, estimate privately on one device, and reveal together.",
   alternates: {
     canonical: "/how-it-works",
   },
@@ -18,11 +18,11 @@ export default function HowItWorksPage() {
         Skip to content
       </a>
       <header className="topbar">
-        <Link className="wordmark" href="/" aria-label="Tiebreak home">
+        <Link className="wordmark" href="/" aria-label="RoundTable home">
           <span className="brand-mark" aria-hidden="true">
             <span />
           </span>
-          <span>tiebreak</span>
+          <span>roundtable</span>
         </Link>
         <nav className="top-navigation" aria-label="Main navigation">
           <Link className="nav-pill" href="/workspace">
@@ -106,11 +106,11 @@ export default function HowItWorksPage() {
       </main>
 
       <footer className="site-footer">
-        <Link className="footer-wordmark" href="/" aria-label="Tiebreak home">
+        <Link className="footer-wordmark" href="/" aria-label="RoundTable home">
           <span className="brand-mark" aria-hidden="true">
             <span />
           </span>
-          <span>tiebreak</span>
+          <span>roundtable</span>
         </Link>
         <p>Estimate independently. Decide as a team.</p>
         <p>Local demo · Your rounds stay in this browser</p>

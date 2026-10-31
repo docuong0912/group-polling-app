@@ -28,7 +28,7 @@ export function AppDialog({
         <Dialog.Content className={`dialog-content ${className}`}>
           <div className="dialog-heading">
             <div>
-              <p className="eyebrow">TIEBREAK · PLANNING POKER</p>
+              <p className="eyebrow">ROUNDTABLE · PLANNING POKER</p>
               <Dialog.Title className="dialog-title">{title}</Dialog.Title>
               <Dialog.Description className="dialog-description">
                 {description}

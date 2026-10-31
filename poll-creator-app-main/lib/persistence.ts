@@ -1,7 +1,7 @@
 import { isEstimationCard } from "./estimation";
 import type { Estimate, EstimationRound, RoundStatus } from "./types";
 
-export const STORAGE_KEY = "tiebreak.planning-poker.rounds.v1";
+export const STORAGE_KEY = "roundtable.planning-poker.rounds.v1";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -69,10 +69,10 @@ export function loadRounds(): LoadResult {
   try {
     serialized = window.localStorage.getItem(STORAGE_KEY);
   } catch (error) {
-    console.error("Unable to read Tiebreak local storage:", error);
+    console.error("Unable to read RoundTable local storage:", error);
     return {
       rounds: [],
-      error: "Tiebreak could not access local storage. Your rounds cannot be saved in this browser.",
+      error: "RoundTable could not access local storage. Your rounds cannot be saved in this browser.",
     };
   }
 
@@ -82,7 +82,7 @@ export function loadRounds(): LoadResult {
   try {
     parsed = JSON.parse(serialized);
   } catch (error) {
-    console.error("Saved Tiebreak data is not valid JSON:", error);
+    console.error("Saved RoundTable data is not valid JSON:", error);
     return {
       rounds: [],
       error: "Saved estimation data could not be read. Export or clear this browser’s stored data before continuing.",
@@ -90,7 +90,7 @@ export function loadRounds(): LoadResult {
   }
 
   if (!Array.isArray(parsed) || !parsed.every(isEstimationRound)) {
-    console.error("Saved Tiebreak data does not match the current estimation format.");
+    console.error("Saved RoundTable data does not match the current estimation format.");
     return {
       rounds: [],
       error: "Saved estimation data is in an unsupported format. It was not overwritten.",
@@ -105,7 +105,7 @@ export function saveRounds(rounds: EstimationRound[]): string | null {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(rounds));
     return null;
   } catch (error) {
-    console.error("Unable to save Tiebreak rounds:", error);
+    console.error("Unable to save RoundTable rounds:", error);
     return "This change is only available until you close or reload this page; browser storage could not save it.";
   }
 }
@@ -115,7 +115,7 @@ export function clearSavedRounds(): string | null {
     window.localStorage.removeItem(STORAGE_KEY);
     return null;
   } catch (error) {
-    console.error("Unable to clear Tiebreak local storage:", error);
-    return "Tiebreak could not clear the saved data in this browser.";
+    console.error("Unable to clear RoundTable local storage:", error);
+    return "RoundTable could not clear the saved data in this browser.";
   }
 }

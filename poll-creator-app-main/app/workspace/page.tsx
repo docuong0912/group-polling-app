@@ -6,7 +6,7 @@ import { Workspace } from "../components/workspace";
 export const metadata: Metadata = {
   title: "My backlog",
   description:
-    "Prepare backlog stories and estimate together with your development team on this device.",
+    "Prepare backlog stories and estimate together with your development team in RoundTable on this device.",
   alternates: {
     canonical: "/workspace",
   },
@@ -19,11 +19,11 @@ export default function WorkspacePage() {
         Skip to content
       </a>
       <header className="topbar">
-        <Link className="wordmark" href="/" aria-label="Tiebreak home">
+        <Link className="wordmark" href="/" aria-label="RoundTable home">
           <span className="brand-mark" aria-hidden="true">
             <span />
           </span>
-          <span>tiebreak</span>
+          <span>roundtable</span>
         </Link>
         <nav className="top-navigation" aria-label="Main navigation">
           <Link className="nav-pill is-current" href="/workspace" aria-current="page">
@@ -54,11 +54,11 @@ export default function WorkspacePage() {
       </main>
 
       <footer className="site-footer">
-        <Link className="footer-wordmark" href="/" aria-label="Tiebreak home">
+        <Link className="footer-wordmark" href="/" aria-label="RoundTable home">
           <span className="brand-mark" aria-hidden="true">
             <span />
           </span>
-          <span>tiebreak</span>
+          <span>roundtable</span>
         </Link>
         <p>Estimate independently. Decide as a team.</p>
         <p>Local demo · Your rounds stay in this browser</p>

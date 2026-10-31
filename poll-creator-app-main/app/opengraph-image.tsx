@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Tiebreak planning poker: estimate backlog stories independently, then reveal together.";
+  "RoundTable planning poker: estimate backlog stories independently, then reveal together.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -37,9 +37,9 @@ export default function OpenGraphImage() {
               fontWeight: 900,
             }}
           >
-            T
+            R
           </div>
-          tiebreak
+          roundtable
           <span style={{ marginLeft: 4, color: "#77614C", fontSize: 19, fontWeight: 500 }}>
             · PLANNING POKER
           </span>

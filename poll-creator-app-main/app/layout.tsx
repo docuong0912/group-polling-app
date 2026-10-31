@@ -23,31 +23,37 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Tiebreak — Planning poker for product teams",
-    template: "%s · Tiebreak",
+    default: "RoundTable — Planning poker for product teams",
+    template: "%s · RoundTable",
   },
   description:
-    "Refine backlog stories together with blind planning-poker estimates, a thoughtful reveal, and a clear team reference point.",
-  applicationName: "Tiebreak",
+    "RoundTable helps product teams estimate backlog stories together with private planning poker, a clear team reference point, and fast team decision-making.",
+  applicationName: "RoundTable",
   keywords: [
+    "RoundTable planning poker",
     "planning poker",
     "story points",
     "backlog refinement",
     "agile estimation",
+    "team voting",
+    "group decision tool",
+    "product planning",
+    "sprint planning",
+    "meeting decisions",
   ],
   openGraph: {
     type: "website",
-    siteName: "Tiebreak",
-    title: "Tiebreak — Planning poker for product teams",
+    siteName: "RoundTable",
+    title: "RoundTable — Planning poker for product teams",
     description:
-      "Estimate backlog stories independently, reveal the cards together, and find a shared reference point.",
+      "Estimate backlog stories independently, reveal the cards together, and align on a shared team decision.",
     images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tiebreak — Planning poker for product teams",
+    title: "RoundTable — Planning poker for product teams",
     description:
-      "Estimate backlog stories independently, reveal the cards together, and find a shared reference point.",
+      "Estimate backlog stories independently, reveal the cards together, and align on a shared team decision.",
     images: ["/opengraph-image"],
   },
 };

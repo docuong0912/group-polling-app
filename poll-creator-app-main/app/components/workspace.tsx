@@ -260,7 +260,7 @@ export function Workspace() {
       median === null
         ? "No numeric team reference (all estimates were unsure)."
         : `Team reference: ${formatMedian(median)} points (median of numeric estimates).`;
-    const text = `Tiebreak planning poker\n${round.title}\n${medianLine}\nEstimate distribution: ${distribution}\nFacilitated by ${round.facilitator}.`;
+    const text = `RoundTable planning poker\n${round.title}\n${medianLine}\nEstimate distribution: ${distribution}\nFacilitated by ${round.facilitator}.`;
 
     try {
       await navigator.clipboard.writeText(text);

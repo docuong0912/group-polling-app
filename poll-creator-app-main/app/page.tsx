@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowDownRight, CircleHelp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tiebreak | Planning poker for product teams",
+  title: "RoundTable | Planning poker for product teams",
   description:
-    "Estimate backlog stories independently, reveal together, and use the team median as a starting point for discussion.",
+    "Run blind planning poker with your product team, estimate backlog stories privately, and reveal together with a clear shared reference point.",
   alternates: {
     canonical: "/",
   },
@@ -18,11 +18,11 @@ export default function Home() {
         Skip to content
       </a>
       <header className="topbar">
-        <Link className="wordmark" href="/" aria-label="Tiebreak home">
+        <Link className="wordmark" href="/" aria-label="RoundTable home">
           <span className="brand-mark" aria-hidden="true">
             <span />
           </span>
-          <span>tiebreak</span>
+          <span>roundtable</span>
         </Link>
         <nav className="top-navigation" aria-label="Main navigation">
           <Link className="nav-pill" href="/workspace">
@@ -180,9 +180,9 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <Link className="footer-wordmark" href="/" aria-label="Tiebreak home">
+        <Link className="footer-wordmark" href="/" aria-label="RoundTable home">
           <span className="brand-mark" aria-hidden="true"><span /></span>
-          <span>tiebreak</span>
+          <span>roundtable</span>
         </Link>
         <p>Estimate independently. Decide as a team.</p>
         <p>Local demo · Your rounds stay in this browser</p>
